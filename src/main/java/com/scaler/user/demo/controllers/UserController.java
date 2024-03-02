@@ -37,7 +37,7 @@ public class UserController {
     }
 
     @PatchMapping("/{id}")
-    public User updateUser(@PathVariable("id") Long id, @RequestBody User user) throws UserNotFoundException {
+    public User updateUser(@PathVariable("id") Long id, @RequestBody User user)  throws UserNotFoundException {
 
         return userService.updateUser(id, user);
     }

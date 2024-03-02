@@ -110,7 +110,8 @@ public class SelfUserService implements UserService {
     }
 
     @Override
-    public User getSingleUser(Long id) throws UserNotFoundException {
+    public User getSingleUser(Long id) throws UserNotFoundException
+     {
         Optional<User> userOptional = userRepository.findById(id);
 
         if (userOptional.isEmpty()) {
